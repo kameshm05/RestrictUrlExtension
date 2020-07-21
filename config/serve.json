@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://chandrudemo.sharepoint.com/sites/BBHC/Lists/RestrictUrlList/AllItems.aspx",
+      "customActions": {
+        "8be63170-9ab2-49eb-b510-abb6d1dcf05e": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Sorry!You are not authorized to access this page"
+          }
+        }
+      }
+    },
+    "restrictExtension": {
+      "pageUrl": "https://chandrudemo.sharepoint.com/sites/BBHC/Lists/RestrictUrlList/AllItems.aspx",
+      "customActions": {
+        "8be63170-9ab2-49eb-b510-abb6d1dcf05e": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Sorry!You are not authorized to access this page"
+          }
+        }
+      }
+    }
+  }
+}
